@@ -12,6 +12,7 @@ class Imagenes extends DatabaseTable{
     public $idimagen;
     public $foto;
 
+    
 
     public function __construct(){
         parent::__construct('imagen','idimagen','App\Modelos\Imagenes',['imagen','idimagen']);
