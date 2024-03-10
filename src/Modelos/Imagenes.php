@@ -8,7 +8,6 @@ class Imagenes extends DatabaseTable{
 
     public const ESTADO_ACTIVO = 'activo';
     public const ESTADO_INIACTIVO = 'inactivo';
-
     public $idimagen;
     public $foto;
 
