@@ -12,20 +12,25 @@
 
     <title><?= $titulo ?></title>
     <link rel="shortcut icon" href="/assets/img/boli.png" type="image/x-icon">
+
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body style="background-color: #fff;"> 
 
     <!-- Menú -->
-    <div>
-        <img src="/assets/img/Dulce (3).png" width="100%" height="450">
-    </div>
 
-    <header class="p-3 text-white" style="background-color: darkred;">
+
+    <header class="p-3 text-white" style="background-color: red;">
+    
         <nav class="navbar border-bottom border-body">
-            <a class="d-flex align-items-center mb-2 mb-lg-0">
-                <img src="/assets/img/boli.png" width="100" height="100">
-            </a>
+            <dIv class ="mx-2 "><front face="arial"> <h1  style="color:aliceblue fs-1 ">FEDEPROBAB</h1> </front></dIv>
+                   
             <ul class="nav mx-auto col-lg-8">
             <li><strong><front face="arial"> <h6><a href="/inicio" class="nav-link px-8 " style="color:aliceblue" > Inicio</a></h6> </front></strong></li>
               <li><strong><front face="arial"> <h6><a href="/" class="nav-link px-8 " style="color:aliceblue">Organización</a></h6> </front></strong></li>
@@ -47,9 +52,9 @@
 
     <!-- Contenido -->
     <?= $contenido ?>
-
+    <br><br>
     <!-- Pie de página -->
-    <footer class="footer p-2 text-white" style="background-color: darkred;">
+    <footer class="footer p-2 text-white" style="background-color: red;">
     <div class="container">
   <div class="row">
 
@@ -80,7 +85,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <script src="path/to/jquery.min.js"></script>
+<script src="path/to/popper.min.js"></script>
+<script src="path/to/bootstrap.min.js"></script>
 </body>
 
 </html>

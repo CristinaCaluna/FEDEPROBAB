@@ -8,6 +8,7 @@
                     <th class="lead text-body-dark"><strong>FECHA</strong></th>
                     <th class="lead text-body-dark"><strong>TITULO</strong></th>
                     <th class="lead text-body-dark"><strong>PUBLICACIÓN</strong></th>
+                    <th class="lead text-body-dark"><strong>FECHA DE MODIFICACIÓN</strong></th>
                     <th class="lead text-body-dark"><strong>ESTADO</strong></th>
                     <th class="lead text-body-dark"><strong>ACCIÓN</strong></th>
                 </tr>
@@ -18,6 +19,12 @@
                         <td><?= $publicacion->fecha ?? 'desconocido'; ?></td>
                         <td><?= $publicacion->titulo ?? 'desconocido'; ?></td>
                         <td style="font-size: smaller"><?= $publicacion->publicacion ?? 'desconocido'; ?></td>
+
+                        <td><div class="col-sm-5 mx-auto">
+                        <span><?= date_create('now', new DateTimeZone('America/Guayaquil'))->format('Y-m-d'); ?></span>
+                       <div class="invalid-feedback">
+                    </div></td>
+
                         <td><?= $publicacion->estado ?? 'desconocido'; ?></td>
                         <td>
                             <input class="text-center" type="checkbox" name="publicaciones[<?= $count; ?>][estado]" id="">

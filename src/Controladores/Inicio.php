@@ -2,16 +2,15 @@
 
 namespace App\Controladores;
 
-use App\Modelos\Artesanados;
+
 use App\Modelos\Usuarios;
 use App\Modelos\Publicaciones;
-use App\Modelos\Imagenes;
+
 
 class Inicio  {
 
 
     private Publicaciones $publicaciones;
-    private Imagenes $imagenes;
     private Usuarios $usuarios;
 
 
@@ -38,11 +37,10 @@ class Inicio  {
 
       
         $this->publicaciones = new Publicaciones;
-        $this ->imagenes = new Imagenes;
+        
         
         $publicaciones=$this->publicaciones->selectFromColumn('estado',Publicaciones::ESTADO_ACTIVO);
-        $imagenes = $this -> imagenes ->selectFromColumn('estado', Imagenes::ESTADO_ACTIVO);
-  
+       
          //var_dump($imagenes);
          //die;
         return[
@@ -50,8 +48,7 @@ class Inicio  {
             'template'=>'front/publicaciones.html.php',
             'titulo'=>'Inicio',
             'variables'=>[
-                'publicaciones'=>$publicaciones,
-                'imagenes' => $imagenes          
+                'publicaciones'=>$publicaciones       
             ]
         ];
     }

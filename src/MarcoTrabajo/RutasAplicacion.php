@@ -4,24 +4,24 @@ namespace App\MarcoTrabajo;
 use App\Controladores\Clave;
 use App\Controladores\Inicio;
 use App\Controladores\Admin\Publicar;
-use App\Controladores\Admin\Imag;
+use App\Controladores\Admin\RegistrarAdSucursal;
+use App\Controladores\Admin\ModificarAdSucursal;
+use App\Controladores\AdSucursales\Publicarad;
 use App\Controladores\Web\Login;
 use App\Modelos\Usuarios;
 use App\Modelos\Publicaciones;
-use App\Modelos\Imagenes;
+
 use App\Controladores\Admin\ListadoPublicaciones;
 
 class RutasAplicacion{
     private $autenttificacion;
     private $usuarios;
     private $publicaciones;
-    private $imagenes;
-
+ 
 
     public function __construct()
     {
         $this->usuarios = new Usuarios;
-        $this ->imagenes = new Imagenes;
         $this->publicaciones = new Publicaciones;
         $this->autenttificacion = new Autentificacion([$this->usuarios],['idusuarios'],'clave');
     }
@@ -30,10 +30,11 @@ class RutasAplicacion{
         
        
         $inicio = new Inicio($this->usuarios);
+        $publicarad = new Publicarad ($this->publicaciones);
          
         $publicar = new Publicar ($this->publicaciones);
-        $imag = new Imag ($this ->imagenes);
-            
+        $registrarSucursal = new RegistrarAdSucursal($this->usuarios);
+        $modificarSucursal = new ModificarAdSucursal($this -> usuarios);          
         $iniciarSession = new Login($this->autenttificacion);
         $nuevaClave = new Clave($this ->usuarios, $this->autenttificacion);
         
@@ -118,14 +119,14 @@ class RutasAplicacion{
                 ],
 
 
-                'admin/imagen' =>[
+                'admin/registrar/adsucursal' =>[
                     "GET"=>[
-                        "controlador"=>$imag,
-                        "accion"=>'publicarImagen'
+                        "controlador"=>$registrarSucursal,
+                        "accion"=>'index'
                     ],
                     "POST"=>[
-                        "controlador"=> $imag,
-                        "accion"=>'imagen'
+                        "controlador"=> $registrarSucursal,
+                        "accion"=>'add'
                     ],
                     
                     'login' => true, // loguedo
@@ -133,14 +134,14 @@ class RutasAplicacion{
             
                 ],
 
-                'admin/listado/imagen' =>[
+                'admin/listado/adsucursal' =>[
                     "GET"=>[
-                        "controlador"=> $imag,
-                        "accion"=>'listadoImagen'
+                        "controlador"=>$modificarSucursal,
+                        "accion"=>'removeSucursal'
                     ],
                     "POST"=>[
-                        "controlador"=> $imag,
-                        "accion"=>'publicaimg'
+                        "controlador"=>$modificarSucursal,
+                        "accion"=>'saveRemoveSucrsal'
                     ],
                     
                     'login' => true, // loguedo
@@ -148,7 +149,61 @@ class RutasAplicacion{
             
                 ],
 
+                'admin/auditoria/publicaciones' =>[
+                    "GET"=>[
+                        "controlador"=> $publicar,
+                        "accion"=>'auditoriaPublicaciones'
+                    ],
+                    
+                    'login' => true, // loguedo
+                    'rol' => Usuarios::ADMIN //rol
+            
+                ],
 
+ //AdSucursal
+
+                'adsucursal/cambio/clave' =>[
+                    'GET' => [
+                        'controlador' => $nuevaClave,
+                        'accion' => 'cambioClave'
+                    ],
+                    'POST' => [
+                        'controlador' => $nuevaClave,
+                        'accion' => 'saveCambioClave'
+                    ],
+                    'login' => true
+                    
+                ],
+
+                'adsucursal/inicio' =>[
+                    "GET"=>[
+                        "controlador"=> $publicarad,
+                        "accion"=>'publicarAnuncio'
+                    ],
+                    "POST"=>[
+                        "controlador"=> $publicarad,
+                        "accion"=>'anuncio'
+                    ],
+                    
+                    'login' => true, // loguedo
+                    'rol' => Usuarios::SUCURSAL //rol
+
+                ],
+
+                'adsucursal/listado/anuncios' =>[
+                    "GET"=>[
+                        "controlador"=> $publicarad,
+                        "accion"=>'listadoPublicacion'
+                    ],
+                    "POST"=>[
+                        "controlador"=> $publicarad,
+                        "accion"=>'publica'
+                    ],
+                    
+                    'login' => true, // loguedo
+                    'rol' => Usuarios::SUCURSAL //rol
+
+                ],
 
                 
 

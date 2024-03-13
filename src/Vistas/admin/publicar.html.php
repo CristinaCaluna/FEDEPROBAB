@@ -13,47 +13,45 @@
 <br>
 
 <div class="container">
-    <center>
-        <h3 class="mb-3"><front style="vertical-align: inherit;">Noticia a Publicar</front></h3>
-        <h4 class="lead">Ingrese la información de la Noticia</h4>
-        
-        <div class="py-5">
-            <form action="" method="post" enctype="multipart/form-data">
-                <div class="row justify-content-center">
-                    <div class="col-md-6 mb-3">
-                        <label for="anuncio" class="form-label"><front style="vertical-align: inherit;">Titulo de la Noticia</front></label>
+    <main class="mx-auto" style="height: 100vh;">
+        <div>
+            <div class="py-5 text-center">
+                <h3 class="mb-3">Noticia a Publicar</h3>
+                <p class="lead">Ingrese la información de la Noticia</p>
+            </div> 
+            <form class="needs-validation" action="" method="post" enctype="multipart/form-data">
+                <div class=" mx-auto"">
+                    <div class="col-8 mx-auto">
+                        <label for="anuncio" class="form-label">Título de la Noticia</label>
                         <input type="text" name="titulo" class="form-control border border-dark" id="anuncio" placeholder="" value="" required="" style="width: 80%;">
                         <div class="invalid-feedback">
-                            Se requiere ingresar un título
+                            Se requiere ingresar un título.
                         </div>
                     </div>
                     <br>
-                    <br>
-               
-                    <div class="col-md-6">
-                        <label for="fecha_publ" class="form-label"><front style="vertical-align: inherit;">Fecha</front></label>
-                        <input type="date" name="fecha" class="form-control border border-dark" id="fecha_publi" placeholder="" value="" required="" style="width: 70%;">
-                        <div class="invalid-feedback">
-                            Se requiere ingresar una fecha
-                        </div>
-                    </div>
-                    <br>
-
-                    <div class="col-md-6">
-                        <label for="publicacion" class="form-label"><front style="vertical-align: inherit;">Contenido</front></label>
+                  
+                    <div class="col-sm-8 mx-auto">
+                        <label for="publicacion" class="form-label">Contenido</label>
                         <textarea class="form-control border border-dark" name="publicacion" aria-label="With textarea" style="width: 80%;"></textarea>
                     </div>
-
+                    <br>
+                    <div class="col-sm-5 mx-auto">
+                        <label for="fecha_publ" class="form-label">Fecha</label>
+                        <input type="date" name="fecha" class="form-control border border-dark" id="fecha_publi" placeholder="" value="<?= date_create('now', new DateTimeZone('America/Guayaquil'))->format('Y-m-d'); ?>" required="" style="width: 70%;">
+                        <div class="invalid-feedback">
+                            Se requiere ingresar una fecha.
+                        </div>
+                    </div>
                     <br>
 
-                    <div class="col-md-6">  
-                        <label for="img_publ" class="form-label"><front style="vertical-align: inherit;">Imagen</front></label>
+                    <div class="col-sm-8  mx-auto">  
+                        <label for="archivo_publ" class="form-label">Archivo (Imagen/Video)</label>
                         <br> 
                         <br> 
                         <div class="input-group justify-content-center">
                             <label class="input-group-btn">
-                                <span class="">
-                                    <input accept=".jpg,.png,.jpeg,.gif" class="hidden" name="foto_publicacion" type="file" id="trabajos">
+                                <span class="btn ">
+                                    <input accept=".jpg,.png,.jpeg,.gif,.mp4,.mov,.avi" class="hidden" name="foto_publicacion" type="file" id="foto_publicacion">
                                 </span>
                             </label>  
                         </div>
@@ -62,9 +60,10 @@
     
                 <br>
                 <div class="text-center">
-                    <button class="mb-3 col-sm-2 btn btn-dark btn-lg mt-4" type="submit">Guardar</button>
+                    <button class="col-sm-2 btn btn-dark btn-lg" type="submit">Guardar</button>
                 </div>
+                <br>
             </form>
         </div>
-    </center>
+    </main>
 </div>

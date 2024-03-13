@@ -15,11 +15,10 @@
 
 <body>
     <!-- Menú -->
-    <header class="p-3 text-white" style="background-color: darkred;">
+    <header class="p-3 text-white" style="background-color: red;">
         <nav class="navbar border-bottom border-body">
-            <a class="d-flex align-items-center mb-2 mb-lg-0">
-                <img src="/assets/img/boli.png" width="100" height="100">
-            </a>
+        <dIv class ="mx-2 "><front face="arial"> <h1  style="color:aliceblue fs-1 ">FEDEPROBAB</h1> </front></dIv>
+               
             <ul class="nav mx-auto col-lg-8">
                 <li class="nav-item dropdown">
                     <strong>
@@ -42,19 +41,28 @@
                     <strong>
                         <h5>
                             <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               Imagenes
+                               Usuarios
                             </a>
                             <div class="dropdown-menu dropdown-menu-right mr-md-0" aria-labelledby="bd-versions">
                                 <strong>
-                                    <h5><a class="dropdown-item" style="color: black;" href="/admin/imagen">Crear Imagenes</a></h5>
+                                    <h5><a class="dropdown-item" style="color: black;" href="/admin/registrar/adsucursal">Crear Usuario</a></h5>
                                 </strong>
                                 <strong>
-                                    <h5><a class="dropdown-item" style="color: black;" href="/admin/listado/imagen">Listar Imagenes </a></h5>
+                                    <h5><a class="dropdown-item" style="color: black;" href="/admin/listado/adsucursal">Listar Usuarios </a></h5>
                                 </strong>
                             </div>
                         </h5>
                     </strong>
                 </li>
+
+                <li ><strong>
+                    <h5>
+                        <a class="nav-link px-8" style="color: aliceblue;" href="/admin/auditoria/publicaciones" > Auditoria </a>
+
+                    </h5>
+                    </strong>
+                </li>
+
                 <li>
                     <strong>
                         <h5><a href="/admin/cambio/clave" class="nav-link px-8" style="color: aliceblue;"> Cambiar Contraseña</a></h5>
@@ -63,7 +71,7 @@
             </ul>
             <div class="text-end">
                 <strong>
-                    <a href='/logout' class="btn btn-outline-white me-2" style="color: aliceblue;"> Cerrar Sesión</a>
+                    <a href='/logout' class="btn btn-dark  me-2" style="color: aliceblue;"> Cerrar Sesión</a>
                 </strong>
             </div>
         </nav>
@@ -73,7 +81,7 @@
     <?= $contenido ?>
 
     <!-- Pie de página -->
-    <footer class="footer p-2 text-white" style="background-color: darkred;">
+    <footer class="footer p-2 text-white" style="background-color: red;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">

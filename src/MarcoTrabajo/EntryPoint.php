@@ -54,6 +54,7 @@ class EntryPoint{
        $usuariosTemplate = [
         'default' => 'layout_publico.html.php',
         'admin' => 'layout_admin.html.php',
+        'adsucursal'=> 'layout_adsucursales.html.php',
        ];
        $rutaT= preg_split('/\//',$this->ruta)[0];
        $templateRes = $usuariosTemplate[$rutaT] ?? $usuariosTemplate['default'];

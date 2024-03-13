@@ -23,22 +23,38 @@ class Publicar{
 
         if(empty($_FILES['foto_publicacion']['name'])){
             return $this->publicarAnuncio(
-                ['error' => 'Error no ingreso ninguna imagen']
+                ['error' => 'Error no ingreso ninguna archivo']
             );
         }
 
         $tmp = $_FILES['foto_publicacion']['tmp_name'];
         $name = $_FILES['foto_publicacion']['name'];
+
+        $extension = pathinfo($name, PATHINFO_EXTENSION);
        
-        $DirecionImage = './assets/img/';
+        $DirecionImage = './assets/publicaciones/';
         $outputImage = $DirecionImage . $name;
+        $databasePath = ltrim($outputImage, '.');
         
+        if (in_array($extension, ['jpg', 'jpeg', 'png', 'gif'])) {
+            // Es una imagen
+            move_uploaded_file($tmp, $outputImage);
+        } elseif (in_array($extension, ['mp4', 'mov', 'avi'])) {
+            // Es un video
+            move_uploaded_file($tmp, $outputImage);
+        } else {
+            // Extensión no permitida
+            return $this->publicarAnuncio(
+                ['error' => 'Error: extensión de archivo no permitida.']
+            );
+        }
+
 
         $agr =[
             'titulo' => ($_POST['titulo']),
             'publicacion' => ($_POST['publicacion']), 
             'fecha' => ($_POST['fecha']),
-            'foto_publicacion' => ltrim($outputImage,'.'),
+            'foto_publicacion' =>$databasePath,
             'estado' => Publicaciones::ESTADO_ACTIVO
             
         ];
@@ -76,12 +92,15 @@ class Publicar{
                 'variables' => ['publicaciones' => $publicaciones]
         ];
     }
+
  
 
     public function publica() {
         //var_dump($_POST);
        // var_dump($_POST['publicaciones']);
-        
+        // Establecer la zona horaria de Ecuador
+        date_default_timezone_set('America/Guayaquil');
+    
         $dataPublicaciones = [];
     
         foreach ($_POST['publicaciones'] as $publicacion) {
@@ -102,9 +121,15 @@ class Publicar{
                 'idpublicaciones' => $publicacion['idpublicaciones']
             ];
     
-            try {
-               $this->publicaciones->updateValues($publicacion['idpublicaciones'], $dataFinalPublicacion);
+            // Si la publicación cambia a estado 'inactivo', actualiza la fecha de fin
+            if ($estado === 'inactivo') {
+                $dataFinalPublicacion['fecha_fin'] = date('Y-m-d'); // Fecha actual en la zona horaria de Ecuador
+                $dataFinalPublicacion['usuario_desactiva'] = $_SESSION['usuario'] ;
+                $dataFinalPublicacion['rol_desactiva'] = $_SESSION['rol'] ;
+            }
     
+            try {
+                $this->publicaciones->updateValues($publicacion['idpublicaciones'], $dataFinalPublicacion);
             } catch(\PDOException $e) {
                 $error = 'Error: ' . $e->getMessage();
             }
@@ -114,8 +139,19 @@ class Publicar{
     }
     
     
+    
 
-   
+    public function auditoriaPublicaciones() {
+ 
+        $publicaciones = $this->publicaciones->selectFromColumn('estado', 'inactivo');
+     
+        return [
+            'titulo' => 'Auditoria',
+            'template' => 'admin/auditoria_publicaciones.html.php',
+            'variables' => ['publicaciones' => $publicaciones]
+        ];
+    }
+    
     
     
 }

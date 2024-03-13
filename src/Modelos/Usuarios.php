@@ -6,7 +6,7 @@ class Usuarios extends DatabaseTable{
 
   
     public const ADMIN = 'Admin'; 
-    public const SECRETARIA = 'Secretaria';
+    public const SUCURSAL= 'Sucursal';
     
     public const ESTADO_ACTIVO = 'activo';
     public const ESTADO_INIACTIVO = 'inactivo';

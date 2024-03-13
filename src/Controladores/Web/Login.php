@@ -17,6 +17,8 @@ class Login {
         $redireccion=[
          
             Usuarios::ADMIN=>'/admin/inicio',
+            Usuarios::SUCURSAL =>'/adsucursal/inicio'
+
           
         ];
 
@@ -40,6 +42,7 @@ class Login {
         $rolesRedirecionamientos = [
           
             Usuarios::ADMIN=>'/admin/inicio',
+            Usuarios::SUCURSAL => '/adsucursal/inicio'
             
         ];
 

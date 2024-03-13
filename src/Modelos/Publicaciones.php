@@ -7,6 +7,7 @@ class Publicaciones extends DatabaseTable{
     public const ADMIN = 'Admin';
     public const ESTADO_ACTIVO = 'activo';
     public const ESTADO_INIACTIVO = 'inactivo';
+   
 
 
 
