@@ -9,7 +9,7 @@
                     <div class="carousel-inner">
                         <?php foreach ($publicaciones as $key => $publicacion): ?>
                             <div class="carousel-item <?= $key === 0 ? 'active' : '' ?>" data-bs-interval="10000">
-                                <p class="text-break fs-6 fw-bolder lh-base text-start"><?= $publicacion->titulo ?></p>
+                                <p class="text-break fs-4 fw-bolder lh-base text-start"><?= $publicacion->titulo ?></p>
                                 <p class="text-break fs-6 font-weight-light lh-base text-start"><?= substr($publicacion->publicacion, 0, 200) . '...'; ?></p>
                                 <a href='/publicacion?idpublicaciones=<?= $publicacion->idpublicaciones ?>' class="btn btn-outline-dark">Leer más...</a>
                             </div>
@@ -27,7 +27,7 @@
             </div>
 
             <!-- Carrusel a la derecha -->
-            <div class="col-9 ms-auto me-0">
+            <div class="col-8 ms-auto me-0">
                 <div id="carouselExampleIntervalRight" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
                     <div class="carousel-indicators">
                         <?php foreach ($publicaciones as $key => $publicacion): ?>

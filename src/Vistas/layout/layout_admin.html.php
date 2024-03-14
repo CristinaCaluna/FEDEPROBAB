@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/assets/css/util.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    
 </head>
 
 <body>
@@ -26,14 +28,32 @@
                             <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Noticias
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right mr-md-0" aria-labelledby="bd-versions">
-                                <strong>
-                                    <h5><a class="dropdown-item" style="color: black;" href="/admin/inicio">Crear Noticias</a></h5>
-                                </strong>
-                                <strong>
-                                    <h5><a class="dropdown-item" style="color: black;" href="/admin/listado/anuncios">Listar Noticias</a></h5>
-                                </strong>
-                            </div>
+                            <div class="dropdown-menu dropdown-menu-right mr-md-0" aria-labelledby="bd-versions" >
+                            <table>
+                                <tr>
+                                    <td>
+                                    <h5>
+                                                <a class="dropdown-item" href="/admin/inicio" style="color: black;">Crear Noticias&nbsp;  
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                                </svg>&nbsp;
+                                                    
+                                                </a>
+                                                </h5>
+                                    </td>
+                                    <td>
+                                    <h5><a class="dropdown-item" style="color: black;" href="/admin/listado/anuncios">Listar Noticias&nbsp;  
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                                                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                                    <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+                                                </svg>&nbsp;                                    
+                                                </a></h5>
+                                    </td>
+                                
+                                </tr>
+                          </table>
+                           </div>
                         </h5>
                     </strong>
                 </li>
@@ -44,12 +64,27 @@
                                Usuarios
                             </a>
                             <div class="dropdown-menu dropdown-menu-right mr-md-0" aria-labelledby="bd-versions">
-                                <strong>
-                                    <h5><a class="dropdown-item" style="color: black;" href="/admin/registrar/adsucursal">Crear Usuario</a></h5>
-                                </strong>
-                                <strong>
-                                    <h5><a class="dropdown-item" style="color: black;" href="/admin/listado/adsucursal">Listar Usuarios </a></h5>
-                                </strong>
+                                <table>
+                                    <tr>
+                                        <td>
+                                        <h5><a class="dropdown-item" style="color: black;" href="/admin/registrar/adsucursal">Crear Usuario
+                                            &nbsp;  
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+                                            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                            <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+                                            </svg>&nbsp;
+                                        </a></h5>
+                                        </td>
+                                        <td>
+                                        <h5><a class="dropdown-item" style="color: black;" href="/admin/listado/adsucursal">Listar Usuarios 
+                                            &nbsp;  
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+                                            </svg>&nbsp; 
+                                        </a></h5>  
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                         </h5>
                     </strong>

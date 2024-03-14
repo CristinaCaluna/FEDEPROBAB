@@ -4,3 +4,19 @@ form{
     max-width: 600px;
     margin: auto;
 }
+
+.linea {
+    border: 0; /* Elimina el borde predeterminado */
+    border-top: 8px solid darkgreen; /* Agrega una línea negra de grosor 3px */
+    margin: 10px auto; /* Margen en la parte superior e inferior, centrado horizontalmente */
+    width: 25%; /* Ancho de la línea */
+}
+    .linea1 {
+        border: 0; /* Elimina el borde predeterminado */
+        border-top: 8px solid darkgreen; /* Agrega una línea negra de grosor 3px */
+        margin: 10px; /* Margen en la parte superior e inferior, centrado horizontalmente */
+        width: 25%; /* Ancho de la línea */
+    }
+    .selected-option:active {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Cambia los valores según tus preferencias */
+    }

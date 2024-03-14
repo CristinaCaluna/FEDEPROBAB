@@ -78,5 +78,39 @@ class Inicio  {
 
     }
 
+    public function organizaciondir(){
+
+        return[
+
+            'template'=>'front/organizacion/direccion.html.php',
+            'titulo'=>'Dirección'
+        ];
+
+
+    }
+
+    public function organizaciongal(){
+
+        return[
+
+            'template'=>'front/organizacion/galeria.html.php',
+            'titulo'=>'Dirección'
+        ];
+    }
+
+    public function organizacionhis(){
+
+        return[
+
+            'template'=>'front/organizacion/historia.html.php',
+            'titulo'=>'Dirección'
+        ];
+
+
+    }
+
+
+    
+
 
 }

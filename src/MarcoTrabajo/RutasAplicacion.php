@@ -74,6 +74,30 @@ class RutasAplicacion{
                     ],
                 ],
 
+            'direccion'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'organizaciondir'
+                    ],
+                ],
+
+            'galeria'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'organizaciongal'
+                    ],
+                ],
+
+            'historia'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'organizacionhis'
+                    ],
+                ],
+
+
+            
+
 //admin
                 'admin/cambio/clave' =>[
                     'GET' => [

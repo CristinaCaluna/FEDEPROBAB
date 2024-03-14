@@ -2,7 +2,7 @@
 <div class="container col-10 ">
   <?php foreach ($publicaciones as $publicacion): ?>
     <div class="text-center">
-      <p class="text-break fs-2 fw-bold lh-base"><strong><?= $publicacion->titulo ?></strong></p>
+      <p class="text-break fs-1 fw-bold lh-base"><strong><?= $publicacion->titulo ?></strong></p>
       <p class="text-break fs-6 fst-italic lh-base"><?= $publicacion->fecha ?></p>
     </div>
     <br>
