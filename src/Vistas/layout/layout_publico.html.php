@@ -30,7 +30,7 @@
     <header class="p-3 text-white" style="background-color: red;">
     
         <nav class="navbar border-bottom border-body">
-            <dIv class ="mx-2 "><front face="arial"> <h1   fs-1 ">FEDEPROBAB</h1> </front></dIv>
+            <dIv class ="mx-2 "><front face="arial"> <h1  class=" fs-1" >FEDEPROBAB</h1> </front></dIv>
                    
             <ul class="nav mx-auto col-lg-8">
             <li><strong><front face="arial"> <h6><a href="/inicio" class="nav-link px-8 " style="color:aliceblue" > Inicio</a></h6> </front></strong></li>
@@ -54,12 +54,13 @@
 
                                     <td  >
                                         <h5 >
-                                        <a class="dropdown-item" href="/galeria" style="color: black;"> Galeria de Presidentes
-                                        </a>
+                                        <a class="dropdown-item" style="color: black;" href="/historia">Historia</a></h5>
+                                    
                                     </td>
                                     <td>
                                         <h5 >
-                                        <a class="dropdown-item" style="color: black;" href="/historia">Historia</a></h5>
+                                        <a class="dropdown-item" href="/galeria" style="color: black;"> Galería de Presidentes</a>
+                                        </h5>
                                     </td >
                                     <td>
                                         <h5 >
@@ -82,25 +83,24 @@
                         <table>
                                 <tr>
                                     <td  style="border-right: 2px solid lightgreen; padding-right: 10px;"> 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16" style="margin-left: 20px;">
-                                            <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"/>
-                                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"/>
-                                            <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"/>
+                                        
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-dribbble" viewBox="0 0 16 16" style="margin-left: 20px;">
+                                             <path fill-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8m5.284 3.688a6.8 6.8 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A7 7 0 0 1 8 1.18m-2.907.642A43 43 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.87 6.87 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.82 6.82 0 0 1-1.752-4.564zM8 14.837a6.8 6.8 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.3 28.3 0 0 1 1.457 5.18A6.7 6.7 0 0 1 8 14.837m3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.77 6.77 0 0 1-2.924 4.573z"/>
+
                                         </svg>
                                     </td> 
 
                                     <td  >
                                         <h5 >
-                                        <a class="dropdown-item" href="/galeria" style="color: black;"> Galeria de Presidentes
-                                        </a>
+                                        <a class="dropdown-item" href="/futbol" style="color: black;"> Fútbol </a></h5>
                                     </td>
                                     <td>
                                         <h5 >
-                                        <a class="dropdown-item" style="color: black;" href="/historia">Historia</a></h5>
+                                        <a class="dropdown-item" style="color: black;" href="/futbolsala">FútbolSala</a></h5>
                                     </td >
                                     <td>
                                         <h5 >
-                                        <a class="dropdown-item" style="color: black;" href="/direccion">Dirección Actual</a></h5>
+                                        <a class="dropdown-item" style="color: black;" href="/ecuavoly">Ecuavoly</a></h5>
                                     </td>
                                 </tr>
                         </table>    
@@ -114,31 +114,30 @@
                 <strong>
                     <h6>
                         <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Legislación
+                            Filiales 
                         </a>
                         <div class="dropdown-menu dropdown-menu-right mr-md-0 " aria-labelledby="bd-versions" >
                         <table>
                                 <tr>
                                     <td  style="border-right: 2px solid lightgreen; padding-right: 10px;"> 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16" style="margin-left: 20px;">
-                                            <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"/>
-                                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"/>
-                                            <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-dribbble" viewBox="0 0 16 16" style="margin-left: 20px;">
+                                             <path fill-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8m5.284 3.688a6.8 6.8 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A7 7 0 0 1 8 1.18m-2.907.642A43 43 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.87 6.87 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.82 6.82 0 0 1-1.752-4.564zM8 14.837a6.8 6.8 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.3 28.3 0 0 1 1.457 5.18A6.7 6.7 0 0 1 8 14.837m3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.77 6.77 0 0 1-2.924 4.573z"/>
+
                                         </svg>
                                     </td> 
 
                                     <td  >
                                         <h5 >
-                                        <a class="dropdown-item" href="/galeria" style="color: black;"> Galeria de Presidentes
+                                        <a class="dropdown-item" href="/galeria" style="color: black;"> Liga Angel Polivio Chavez 
                                         </a>
                                     </td>
                                     <td>
                                         <h5 >
-                                        <a class="dropdown-item" style="color: black;" href="/historia">Historia</a></h5>
+                                        <a class="dropdown-item" style="color: black;" href="/historia">Liga Guaranda</a></h5>
                                     </td >
                                     <td>
                                         <h5 >
-                                        <a class="dropdown-item" style="color: black;" href="/direccion">Dirección Actual</a></h5>
+                                        <a class="dropdown-item" style="color: black;" href="/direccion">Liga Parroquial Guaranda </a></h5>
                                     </td>
                                 </tr>
                         </table>    
@@ -189,7 +188,7 @@
                 <strong>
                     <h6>
                         <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            LOTAIP
+                            Legislación
                         </a>
                         <div class="dropdown-menu dropdown-menu-right mr-md-0 " aria-labelledby="bd-versions" >
                         <table>
@@ -226,7 +225,44 @@
                 <strong>
                     <h6>
                         <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Transparencia
+                            Estadística 
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right mr-md-0 " aria-labelledby="bd-versions" >
+                        <table>
+                                <tr>
+                                    <td  style="border-right: 2px solid lightgreen; padding-right: 10px;"> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16" style="margin-left: 20px;">
+                                            <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"/>
+                                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"/>
+                                            <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"/>
+                                        </svg>
+                                    </td> 
+
+                                    <td  >
+                                        <h5 >
+                                        <a class="dropdown-item" href="/galeria" style="color: black;"> Galeria de Presidentes
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <h5 >
+                                        <a class="dropdown-item" style="color: black;" href="/historia">Historia</a></h5>
+                                    </td >
+                                    <td>
+                                        <h5 >
+                                        <a class="dropdown-item" style="color: black;" href="/direccion">Dirección Actual</a></h5>
+                                    </td>
+                                </tr>
+                        </table>    
+                        </div>
+                    </h6>
+                </strong>
+            </li> 
+
+            <li class="nav-item dropdown">
+                <strong>
+                    <h6>
+                        <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Trasparencia
                         </a>
                         <div class="dropdown-menu dropdown-menu-right mr-md-0 " aria-labelledby="bd-versions" >
                         <table>
@@ -263,7 +299,7 @@
 
             <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
                 <li class="nav-item col-6 col-lg-auto" >
-                    <a class="nav-link py-2 px-0 px-lg-2" style="color:aliceblue" href="https://facebook.com" target="_blank" rel="noopener">
+                    <a class="nav-link py-2 px-0 px-lg-2" style="color:aliceblue" href="https://www.facebook.com/p/Fedeprobab-Bol%C3%ADvar-100075558387597/?_rdr" target="_blank" rel="noopener">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><title>Facebook</title>
                     <path fill="currentColor" fill-rule="evenodd" d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path></svg>
                     <small class="d-lg-none ms-2"><front style="vertical-align: inherit;"><front style="vertical-align: inherit;">Facebook</front></front></small>
@@ -297,34 +333,25 @@
         </nav>
     </header>
 
+
     <!-- Contenido -->
+
+
     <?= $contenido ?>
-    <br><br>
+ 
+
+<br><br>
+
     <!-- Pie de página -->
     <footer class="footer p-2 text-white" style="background-color: red;">
     <div class="container">
-  <div class="row">
-
-  <div class="col-lg-6">
-                    <h4>Contacto</h4>
-                    <p>Teléfono: 099999999</p>
-                </div>
-                <div class="col-lg-6">
-                    <h4>Síguenos en Redes Sociales</h4>
-                    <ul class="social-icons">
-                        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> FACEBOOK</a></li>
-                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i>INSTAGRAM</a></li>
-                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> YOUTUBE</a></li>
-                        
-                    </ul>
-                </div>
-                <br>
+  
                 <div class="col-lg-12 text-center">
 
-                    <p>&copy; 2024 FEDEPROBABS </p>
+                    <p>&copy; FEDEPROBAB 2014, Derechos Reservados </p>
                     
                 </div>
-            </div>
+         
   </div>
     </footer>
 

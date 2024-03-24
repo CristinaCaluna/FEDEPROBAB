@@ -33,25 +33,25 @@ class Inicio  {
     }
 
         
-    public function publicaG(){
-
-      
+    public function publicaG() {
         $this->publicaciones = new Publicaciones;
         
+        $publicaciones = $this->publicaciones
+            ->where('estado', Publicaciones::ESTADO_ACTIVO)
+            ->orderBy('fecha', 'desc') 
+            ->get();
         
-        $publicaciones=$this->publicaciones->selectFromColumn('estado',Publicaciones::ESTADO_ACTIVO);
-       
-         //var_dump($imagenes);
-         //die;
-        return[
-
-            'template'=>'front/publicaciones.html.php',
-            'titulo'=>'Inicio',
-            'variables'=>[
-                'publicaciones'=>$publicaciones       
+        return [
+            'template' => 'front/publicaciones.html.php',
+            'titulo' => 'Inicio',
+            'variables' => [
+                'publicaciones' => $publicaciones       
             ]
         ];
     }
+    
+    
+    
 
     public function listarpublica(){
 
@@ -78,6 +78,8 @@ class Inicio  {
 
     }
 
+    //modulo organizacion
+
     public function organizaciondir(){
 
         return[
@@ -94,7 +96,7 @@ class Inicio  {
         return[
 
             'template'=>'front/organizacion/galeria.html.php',
-            'titulo'=>'Dirección'
+            'titulo'=>'Galeria de Presidentes '
         ];
     }
 
@@ -103,7 +105,43 @@ class Inicio  {
         return[
 
             'template'=>'front/organizacion/historia.html.php',
-            'titulo'=>'Dirección'
+            'titulo'=>'Historia'
+        ];
+
+
+    }
+
+
+    //modulo eventos deportivos 
+
+    public function dep1(){
+
+        return[
+
+            'template'=>'front/eventos/fut.html.php',
+            'titulo'=>'Fútbol'
+        ];
+
+
+    }
+
+    public function dep2(){
+
+        return[
+
+            'template'=>'front/eventos/futsala.html.php',
+            'titulo'=>'FútbolSala'
+        ];
+
+
+    }
+
+    public function dep3(){
+
+        return[
+
+            'template'=>'front/eventos/ecua.html.php',
+            'titulo'=>'Ecuavoly'
         ];
 
 

@@ -5,18 +5,22 @@ form{
     margin: auto;
 }
 
+
 .linea {
-    border: 0; /* Elimina el borde predeterminado */
-    border-top: 8px solid darkgreen; /* Agrega una línea negra de grosor 3px */
+    border: none; /* Elimina el borde predeterminado */
+    border-top: 5px solid rgb(15, 35, 15); /* Agrega una línea verde de grosor 5px */
     margin: 10px auto; /* Margen en la parte superior e inferior, centrado horizontalmente */
-    width: 25%; /* Ancho de la línea */
+    width: 70px; /* Ancho de la línea */
 }
-    .linea1 {
-        border: 0; /* Elimina el borde predeterminado */
-        border-top: 8px solid darkgreen; /* Agrega una línea negra de grosor 3px */
-        margin: 10px; /* Margen en la parte superior e inferior, centrado horizontalmente */
-        width: 25%; /* Ancho de la línea */
-    }
-    .selected-option:active {
+
+
+
+
+.selected-option:active {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Cambia los valores según tus preferencias */
     }
+
+
+    .card {
+        margin-bottom: 20px; /* Espacio entre las tarjetas */
+      }

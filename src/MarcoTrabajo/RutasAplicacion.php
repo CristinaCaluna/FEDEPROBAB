@@ -95,7 +95,24 @@ class RutasAplicacion{
                     ],
                 ],
 
-
+            'futbol'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'dep1'
+                    ],
+                ],
+            'futbolsala'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'dep2'
+                    ],
+                ],
+            'ecuavoly'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'dep3'
+                    ],
+                ],
             
 
 //admin

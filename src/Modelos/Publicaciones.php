@@ -19,7 +19,9 @@ class Publicaciones extends DatabaseTable{
         public function verPublicacion($idpublicaciones) {
 
         $result = Publicaciones::where('estado', self::ESTADO_ACTIVO)
-       ->where('idpublicaciones', $idpublicaciones)->get(); // Ejecutar la consulta y obtener los resultados
+       ->where('idpublicaciones', $idpublicaciones)
+       ->orderBy('fecha', 'asc')
+       ->get(); // Ejecutar la consulta y obtener los resultados
         // var_dump($result);
         return $result;
     }
