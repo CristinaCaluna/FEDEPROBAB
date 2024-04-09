@@ -134,7 +134,143 @@ class Inicio  {
 
             'template'=>'front/filiales/filial.html.php',
             'titulo'=>'Autoridades',
-            'variables' => ['eventosdeportivos' => $consulta, $consulta, $consulta,$consulta,$consulta]
+            'variables' => ['eventosdeportivos' => $consulta]
+        ];
+
+
+    } 
+
+    public function filial1(){
+        $consulta = EventosDeportivos::where('idorganizador_organizador', 3)->distinct()->get();
+  
+      
+        
+        return[
+
+            'template'=>'front/filiales/filial1.html.php',
+            'titulo'=>'Autoridades',
+            'variables' => ['eventosdeportivos' => $consulta]
+        ];
+
+
+    } 
+
+    public function filial2(){
+        $consulta = EventosDeportivos::where('idorganizador_organizador', 4)->distinct()->get();
+  
+      
+        
+        return[
+
+            'template'=>'front/filiales/filial2.html.php',
+            'titulo'=>'Autoridades',
+            'variables' => ['eventosdeportivos' => $consulta]
+        ];
+
+
+    } 
+
+
+    public function filial3(){
+        $consulta = EventosDeportivos::where('idorganizador_organizador', 5)->distinct()->get();
+  
+      
+        
+        return[
+
+            'template'=>'front/filiales/filial3.html.php',
+            'titulo'=>'Autoridades',
+            'variables' => ['eventosdeportivos' => $consulta]
+        ];
+
+
+    } 
+
+    public function filial4(){
+        $consulta = EventosDeportivos::where('idorganizador_organizador', 6)->distinct()->get();
+  
+      
+        
+        return[
+
+            'template'=>'front/filiales/filial4.html.php',
+            'titulo'=>'Autoridades',
+            'variables' => ['eventosdeportivos' => $consulta]
+        ];
+
+
+    } 
+
+    public function filial5(){
+        $consulta = EventosDeportivos::where('idorganizador_organizador', 7)->distinct()->get();
+  
+      
+        
+        return[
+
+            'template'=>'front/filiales/filial5.html.php',
+            'titulo'=>'Autoridades',
+            'variables' => ['eventosdeportivos' => $consulta]
+        ];
+
+
+    } 
+
+    public function filial6(){
+        $consulta = EventosDeportivos::where('idorganizador_organizador', 8)->distinct()->get();
+  
+      
+        
+        return[
+
+            'template'=>'front/filiales/filial6.html.php',
+            'titulo'=>'Autoridades',
+            'variables' => ['eventosdeportivos' => $consulta]
+        ];
+
+
+    } 
+
+    public function filial7(){
+        $consulta = EventosDeportivos::where('idorganizador_organizador', 9)->distinct()->get();
+  
+      
+        
+        return[
+
+            'template'=>'front/filiales/filial7.html.php',
+            'titulo'=>'Autoridades',
+            'variables' => ['eventosdeportivos' => $consulta]
+        ];
+
+
+    } 
+
+    public function filial8(){
+        $consulta = EventosDeportivos::where('idorganizador_organizador', 10)->distinct()->get();
+  
+      
+        
+        return[
+
+            'template'=>'front/filiales/filial8.html.php',
+            'titulo'=>'Autoridades',
+            'variables' => ['eventosdeportivos' => $consulta]
+        ];
+
+
+    } 
+
+    public function filial9(){
+        $consulta = EventosDeportivos::where('idorganizador_organizador', 11)->distinct()->get();
+  
+      
+        
+        return[
+
+            'template'=>'front/filiales/filial9.html.php',
+            'titulo'=>'Autoridades',
+            'variables' => ['eventosdeportivos' => $consulta]
         ];
 
 

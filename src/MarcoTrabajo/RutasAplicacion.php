@@ -149,6 +149,60 @@ class RutasAplicacion{
                         "accion"=>'filial'
                     ],
                 ],
+                'filial1'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'filial1'
+                    ],
+                ],
+                'filial2'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'filial2'
+                    ],
+                ],
+                'filial3'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'filial3'
+                    ],
+                ],
+                'filial4'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'filial4'
+                    ],
+                ],
+                'filial5'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'filial5'
+                    ],
+                ],
+                'filial6'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'filial6'
+                    ],
+                ],
+                'filial7'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'filial7'
+                    ],
+                ],
+                'filial8'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'filial8'
+                    ],
+                ],
+                'filial9'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'filial9'
+                    ],
+                ],
             
 
 //admin

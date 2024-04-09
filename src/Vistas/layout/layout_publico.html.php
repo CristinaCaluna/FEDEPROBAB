@@ -37,10 +37,10 @@
             <ul class="nav mx-auto col-lg-8">
             <li><strong><front face="arial"> <h6><a href="/inicio" class="nav-link px-8 " style="color:aliceblue" > Inicio</a></h6> </front></strong></li>
 
-            <li class="nav-item dropdown">
+            <li >
                 <strong>
                     <h6>
-                        <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" style="color: aliceblue;"  id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Organización
                         </a>
                         <div class="dropdown-menu dropdown-menu-right mr-md-0 " aria-labelledby="bd-versions" >
@@ -56,7 +56,7 @@
 
                                     <td  >
                                         <h5 >
-                                        <a class="dropdown-item" style="color: black;" href="/historia">Historia</a></h5>
+                                        <a class="dropdown-item " style="color: black;" href="/historia">Historia</a></h5>
                                     
                                     </td>
                                     <td>
@@ -80,12 +80,9 @@
                 </strong>
             </li> 
             
-            <li class="nav-item dropdown">
-    <strong>
-        <h6>
-            <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Eventos Deportivos
-            </a>
+            <li >
+             <strong><h6><a class="nav-link dropdown-toggle" style="color: aliceblue;"  id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Eventos Deportivos</a>
 
             <div class="dropdown-menu dropdown-menu-right mr-md-0 " aria-labelledby="bd-versions" >
                         <table>
@@ -99,7 +96,7 @@
 
                                     <td  >
                                         <h5 >
-                                        <a class="dropdown-item" href="/futbol" style="color: black;"> Futbol
+                                        <a class="dropdown-item" href="/futbol" style="color: black;" id="futbol"> Futbol
                                     </td>
                                     <td>
                                         <h5 >
@@ -130,14 +127,15 @@
 
 
              
-            <li class="nav-item dropdown">
+            <li>
                 <strong>
                     <h6>
-                        <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" style="color: aliceblue;"  id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Filiales 
                         </a>
                         <div class="dropdown-menu dropdown-menu-right mr-md-0 " aria-labelledby="bd-versions" >
                         <table>
+                
                                 <tr>
                                     <td  style="border-right: 2px solid lightgreen; padding-right: 10px;"> 
                                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-dribbble" viewBox="0 0 16 16" style="margin-left: 20px;">
@@ -147,18 +145,60 @@
                                     </td> 
 
                                     <td  >
-                                        <h5 >
-                                        <a class="dropdown-item" href="/filial" style="color: black;"> Liga Angel Polivio Chavez 
-                                        </a>
+                                        <h6 >
+                                        <a class="dropdown-item" href="/filial" style="color: black;"> L.Barrial Guaranda </a>
                                     </td>
                                     <td>
-                                        <h5 >
-                                        <a class="dropdown-item" style="color: black;" href="/historia">Liga Guaranda</a></h5>
+                                        <h6 >
+                                        <a class="dropdown-item" style="color: black;" href="/filial1">L.Barrial Dr. “Ángel Polibio Chaves”</a></h6>
                                     </td >
                                     <td>
-                                        <h5 >
-                                        <a class="dropdown-item" style="color: black;" href="/direccion">Liga Parroquial Guaranda </a></h5>
+                                        <h6 >
+                                        <a class="dropdown-item" style="color: black;" href="/filial2">L.Barrial San Miguel  </a></h6>
                                     </td>
+                                    <td  >
+                                        <h6 >
+                                        <a class="dropdown-item" href="/filial3" style="color: black;"> L.Guaranda </a>
+                                    </td>
+                                   
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                <td  style="border-right: 2px solid lightgreen; padding-right: 10px;"> </td>
+                                     <td  >
+                                        <h6>
+                                        <a class="dropdown-item" href="/filial4" style="color: black;"> L.Guanujo </a>
+                                    </td>
+                                    <td  >
+                                        <h6 >
+                                        <a class="dropdown-item" href="/filial5" style="color: black;"> L.Salinas </a>
+                                    </td>
+                                    <td  >
+                                        <h6>
+                                        <a class="dropdown-item" href="/filial6" style="color: black;"> L.Simiatug</a>
+                                    </td>
+                                    <td  >
+                                        <h6 >
+                                        <a class="dropdown-item" href="/filial7" style="color: black;"> L.Chillanes</a>
+                                    </td>
+                                   
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                <td  style="border-right: 2px solid lightgreen; padding-right: 10px;"> </td>
+                                    
+                                    <td  >
+                                        <h6 >
+                                        <a class="dropdown-item" href="/filial8" style="color: black;"> L.San Pablo de Atenas</a>
+                                    </td>
+                                    <td  >
+                                        <h6 >
+                                        <a class="dropdown-item" href="/filial9" style="color: black;"> L.San Luis de Pambil  </a>
+                                    </td>
+                                    
+                                    
                                 </tr>
                         </table>    
                         </div>
@@ -167,10 +207,10 @@
             </li> 
              
              
-            <li class="nav-item dropdown">
+            <li >
                 <strong>
                     <h6>
-                        <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" style="color: aliceblue;"  id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                            Planificación
                         </a>
                         <div class="dropdown-menu dropdown-menu-right mr-md-0 " aria-labelledby="bd-versions" >
@@ -204,10 +244,10 @@
                 </strong>
             </li> 
              
-            <li class="nav-item dropdown">
+            <li >
                 <strong>
                     <h6>
-                        <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" style="color: aliceblue;"  id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Legislación
                         </a>
                         <div class="dropdown-menu dropdown-menu-right mr-md-0 " aria-labelledby="bd-versions" >
@@ -241,10 +281,10 @@
                 </strong>
             </li> 
              
-            <li class="nav-item dropdown">
+            <li >
                 <strong>
                     <h6>
-                        <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" style="color: aliceblue;"  id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Estadística 
                         </a>
                         <div class="dropdown-menu dropdown-menu-right mr-md-0 " aria-labelledby="bd-versions" >
@@ -278,10 +318,10 @@
                 </strong>
             </li> 
 
-            <li class="nav-item dropdown">
+            <li >
                 <strong>
                     <h6>
-                        <a class="nav-link dropdown-toggle" style="color: aliceblue;" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" style="color: aliceblue;"  id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Trasparencia
                         </a>
                         <div class="dropdown-menu dropdown-menu-right mr-md-0 " aria-labelledby="bd-versions" >
@@ -297,7 +337,7 @@
 
                                     <td  >
                                         <h5 >
-                                        <a class="dropdown-item" href="/galeria" style="color: black;"> Galeria de Presidentes
+                                        <a class="dropdown-item" href="/galeria" style="color: black;" > Galeria de Presidentes
                                         </a>
                                     </td>
                                     <td>
