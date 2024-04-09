@@ -20,7 +20,7 @@
         <div class="mx-auto">
             <form class="needs-validation" action="" method="post" enctype="multipart/form-data">
                 <div class="g-3">
-                <div class="col-sm-5 mx-3">
+                <div class="col-sm-8 mx-auto">
                         <label for="fecha_publ" class="form-label">Fecha</label>
                         <input type="date" name="fecha" class="form-control border border-dark" id="fecha_publi" placeholder="" value="<?= date_create('now', new DateTimeZone('America/Guayaquil'))->format('Y-m-d'); ?>" required="" style="width: 70%;">
                         <div class="invalid-feedback">

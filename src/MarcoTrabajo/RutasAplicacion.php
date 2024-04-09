@@ -8,35 +8,46 @@ use App\Controladores\Admin\RegistrarAdSucursal;
 use App\Controladores\Admin\ModificarAdSucursal;
 use App\Controladores\AdSucursales\Publicarad;
 use App\Controladores\Web\Login;
+use App\Modelos\Organizadores;
 use App\Modelos\Usuarios;
 use App\Modelos\Publicaciones;
 
+use App\Controladores\Admin\RegistrarEvento;
+use App\Controladores\AdSucursales\RegistrarEventoad;
+
 use App\Controladores\Admin\ListadoPublicaciones;
+use App\Modelos\EventosDeportivos;
 
 class RutasAplicacion{
     private $autenttificacion;
     private $usuarios;
     private $publicaciones;
+    private $organizadores;
+    private $eventosdeportivos;
  
 
     public function __construct()
     {
         $this->usuarios = new Usuarios;
         $this->publicaciones = new Publicaciones;
+        $this->organizadores = new Organizadores;
+        
         $this->autenttificacion = new Autentificacion([$this->usuarios],['idusuarios'],'clave');
     }
 
     public function getRoutes(){
         
        
-        $inicio = new Inicio($this->usuarios);
+        $inicio = new Inicio($this->usuarios, $this->eventosdeportivos);
         $publicarad = new Publicarad ($this->publicaciones);
          
         $publicar = new Publicar ($this->publicaciones);
-        $registrarSucursal = new RegistrarAdSucursal($this->usuarios);
+        $registrarSucursal = new RegistrarAdSucursal($this->usuarios, $this->organizadores);
         $modificarSucursal = new ModificarAdSucursal($this -> usuarios);          
         $iniciarSession = new Login($this->autenttificacion);
         $nuevaClave = new Clave($this ->usuarios, $this->autenttificacion);
+        $registrarEvento = new RegistrarEvento($this ->usuarios,$this ->eventosdeportivos);
+        $registrarEventoad = new RegistrarEventoad($this ->usuarios, $this ->eventosdeportivos);
         
         
 
@@ -87,6 +98,12 @@ class RutasAplicacion{
                         "accion"=>'organizaciongal'
                     ],
                 ],
+                'autoridades'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'organizacionau'
+                    ],
+                ],
 
             'historia'=>[
                     "GET"=>[
@@ -97,20 +114,39 @@ class RutasAplicacion{
 
             'futbol'=>[
                     "GET"=>[
-                        "controlador"=> $inicio,
-                        "accion"=>'dep1'
+                        "controlador"=>$registrarEvento,
+                        "accion"=>'listarf'
                     ],
                 ],
             'futbolsala'=>[
                     "GET"=>[
-                        "controlador"=> $inicio,
-                        "accion"=>'dep2'
+                        "controlador"=>$registrarEvento,
+                        "accion"=>'listarfs'
                     ],
                 ],
             'ecuavoly'=>[
                     "GET"=>[
+                        "controlador"=>$registrarEvento,
+                        "accion"=>'listarv'
+                    ],
+                ],
+
+                'indor'=>[
+                    "GET"=>[
+                        "controlador"=>$registrarEvento,
+                        "accion"=>'listari'
+                    ],
+                ],
+                'bascket'=>[
+                    "GET"=>[
+                        "controlador"=>$registrarEvento,
+                        "accion"=>'listarb'
+                    ],
+                ],
+                'filial'=>[
+                    "GET"=>[
                         "controlador"=> $inicio,
-                        "accion"=>'dep3'
+                        "accion"=>'filial'
                     ],
                 ],
             
@@ -200,6 +236,22 @@ class RutasAplicacion{
                     'rol' => Usuarios::ADMIN //rol
             
                 ],
+                'admin/registrar/evento_deportivo' =>[
+                  
+                        "GET"=>[
+                            "controlador"=> $registrarEvento,
+                            "accion"=>'index'
+                        ],
+                        "POST"=>[
+                            "controlador"=>$registrarEvento,
+                            "accion"=>'adde'
+                        ],
+                        
+                        'login' => true, // loguedo
+                        'rol' => Usuarios::ADMIN //rol
+                
+                ],
+             
 
  //AdSucursal
 
@@ -245,6 +297,21 @@ class RutasAplicacion{
                     'rol' => Usuarios::SUCURSAL //rol
 
                 ],
+                'adsucursal/registrar/evento_deportivo' =>[
+                  
+                    "GET"=>[
+                        "controlador"=>$registrarEventoad,
+                        "accion"=>'index'
+                    ],
+                    "POST"=>[
+                        "controlador"=>$registrarEventoad,
+                        "accion"=>'adde'
+                    ],
+                    
+                    'login' => true, // loguedo
+                    'rol' => Usuarios::SUCURSAL //rol
+            
+            ],
 
                 
 

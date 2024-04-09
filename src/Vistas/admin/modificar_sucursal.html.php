@@ -40,4 +40,4 @@
             <button style="display:block; margin: 0.5rem auto;" class="button-submit col-sm-2 btn btn-dark  button-submit" type="submit">Guardar</button>                          
         </form>
     </div>
-</div>
+</div><br><br><br><br>

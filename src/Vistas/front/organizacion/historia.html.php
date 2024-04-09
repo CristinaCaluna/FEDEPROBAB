@@ -1,4 +1,4 @@
-    <br>
+    <br><br>
     <div class="container">
     <h1 class="fw-light  text-center fw-bolder " style=" color:forestgreen">Historia</h1>
     <hr class="linea"/>
@@ -7,14 +7,14 @@
 <div class="container-sm ">
     <div class="row">
         <div class="col-md-6"><br><br>
-            <p class="lead lh-lg fs-6 text-dark">La Federación Provincial de Ligas Deportivas Barriales y Parroquiales de Bolívar,
+            <p class="lead lh-lg fs-6 text-dark"><strong>La Federación Provincial de Ligas Deportivas Barriales y Parroquiales de Bolívar,
                  fundada en la ciudad de Guaranda, provincia de Bolívar, el 22 de septiembre de mil novecientos noventa y nueve,
                   es una institución deportiva de derecho privado, con objetivos sociales, sin fines de lucro y que goza de autonomía
                    administrativa, técnica y económica, cuya finalidad es planificar, dirigir y fomentar el deporte barrial y parroquial
                     de la Provincia Bolívar y se rige por la Ley de Deporte Educación Física y Recreación, su Reglamento General, 
                     por el presente Estatuto y sus reglamentos y más normativa conexa, al tenor de lo dispuesto en el artículo 4 
                     de la Ley de Deporte, Educación Física y Recreación. Es filial de la Federación Nacional de Ligas Deportivas 
-                    Barriales y Parroquiales del Ecuador – FEDENALIGAS.</p>
+                    Barriales y Parroquiales del Ecuador – FEDENALIGAS.</strong></p>
         </div>
         <div class="col-lg-6 col-md-4 text-center"> 
             <img  src="/assets/img/logo.jpg" alt="" width="350" height="350">           
@@ -28,16 +28,16 @@
     <div class="container pt-5">
         <div class="row">
         <div class="col-lg-6 col-md-4 text-center"> 
-                <img  src="/assets/img/logo.jpg" alt="" width="250" height="250">         
+                <img  src="/assets/img/mision.png" alt="" width="250" height="250">         
             </div>
     
             <div class="col-lg-6 col-md-8 text-end"> 
             <h1 class="fw-light  text-center fw-bolder" style=" color:forestgreen" >Misión</h1>
                 <hr class="linea"/><br>
-                <p class="lead text-body-secondary fs-6 lh-lg text-center"><em>
+                <p class="lead text-body-secondary fs-6 lh-lg text-center"><em><strong>
                     "Somos la institución provincial que genera el trabajo del voluntariado y ejecuta cambios innovadores, transparentes 
                     e inclusivos relacionados al deporte, la educación física y la recreación como herramienta para el desarrollo y la 
-                    transformación integral de los Bolivarenses, con la participación de todos los actores sociales y deportivos."</em>
+                    transformación integral de los Bolivarenses, con la participación de todos los actores sociales y deportivos."</em></strong>
                 </p>
             </div>
         </div>
@@ -48,15 +48,15 @@
             <div class="col-md-6">
             <h1 class="fw-light fw-bolder text-center" style=" color:forestgreen">Visión</h1>
                 <hr class="linea"/><br>
-                <p class="lead text-body-secondary fs-6 lh-lg text-center"><em>
+                <p class="lead text-body-secondary fs-6 lh-lg text-center"><em><strong>
                 Ser la institución del deporte barrial y parroquial que va más allá del simple ejercicio físico que potencia a los 
                 deportistas bolivarenses y transforma a Bolívar en una provincia activo y saludable a través del fomento de la 
-                actividad física, deportiva y recreativa con innovación, transparencia, inclusión y unidad."</em>
+                actividad física, deportiva y recreativa con innovación, transparencia, inclusión y unidad."</em></strong>
                 </p> 
             </div>
     
             <div class="col-lg-6 col-md-4 text-center"> 
-                <img  src="/assets/img/logo.jpg" alt="" width="250" height="250">         
+                <img  src="/assets/img/vision.png" alt="" width="250" height="250">         
             </div>
         </div>
     </div>
@@ -66,10 +66,11 @@
 
 
    <div class="container pt-5">
-    
+   <h1 class="fw-light fw-bolder text-center" style=" color:forestgreen">Valores</h1>
+                <hr class="linea"/><br>
    <div class="row ">
    <div class="col-lg-4 col-md-4 text-center"> <br><br>
-                <img  src="/assets/img/logo.jpg" alt="" width="350" height="350">         
+                <img  src="/assets/img/valores.png" alt="" width="350" height="350">         
             </div>
     <div class=" pt-5 col-md-6 tex col-lg-7 rounded-2 p-3 mb-2  text-dark justify-content-end "  >
         <div class="accordion" id="accordionPanelsStayOpenExample">

@@ -5,6 +5,7 @@ namespace App\Controladores;
 
 use App\Modelos\Usuarios;
 use App\Modelos\Publicaciones;
+use App\Modelos\EventosDeportivos;
 
 
 class Inicio  {
@@ -110,42 +111,38 @@ class Inicio  {
 
 
     }
-
-
-    //modulo eventos deportivos 
-
-    public function dep1(){
+    public function organizacionau(){
 
         return[
 
-            'template'=>'front/eventos/fut.html.php',
-            'titulo'=>'Fútbol'
+            'template'=>'front/organizacion/directorio.html.php',
+            'titulo'=>'Autoridades'
         ];
 
 
     }
 
-    public function dep2(){
 
+    //modulo filial
+
+    public function filial(){
+        $consulta = EventosDeportivos::where('idorganizador_organizador', 2)->distinct()->get();
+  
+      
+        
         return[
 
-            'template'=>'front/eventos/futsala.html.php',
-            'titulo'=>'FútbolSala'
+            'template'=>'front/filiales/filial.html.php',
+            'titulo'=>'Autoridades',
+            'variables' => ['eventosdeportivos' => $consulta, $consulta, $consulta,$consulta,$consulta]
         ];
 
 
-    }
+    } 
 
-    public function dep3(){
-
-        return[
-
-            'template'=>'front/eventos/ecua.html.php',
-            'titulo'=>'Ecuavoly'
-        ];
+    
 
 
-    }
 
 
     

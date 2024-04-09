@@ -1,14 +1,17 @@
-<?php if(isset($error)): ?> 
-  <div class="alert alert-danger text-center" role="alert">
-    <?= $error ?>
-  </div>
+<?php if(isset($error)): ?>
+  
+  
+    <div class="alert alert-danger text-center" role="alert">
+        <?= $error ?>
+    </div>
 <?php endif; ?>    
 
-<?php if(isset($exito)): ?>
-  <div class="alert alert-success text-center" role="alert">
-    <?= $exito ?>
-  </div>
+<?php if(isset($success)): ?>
+    <div class="alert alert-success text-center" role="alert">
+        <?= $success ?>
+    </div>
 <?php endif; ?> 
+
 
 <div class="container">
   <main>
@@ -42,7 +45,21 @@
             <div class="invalid-feedback">
               Se requiere el ingreso de un apellido 
             </div>
-          </div><br><br>
+          </div><br>
+
+          <div class="col-sm-6 mx-auto">
+            <label for="idorganizador" class="form-label">Organizacion</label><br>
+            <select class="form-select border border-dark text-dark" id="idorganizador" name="idorganizador" aria-label="Seleccione un organizador" required>
+                <option selected>Seleccione</option>
+                <?php foreach ($organizadores as $organizador): ?>
+                    <?php if ($organizador->idorganizador != 1): ?>
+                        <option value="<?= $organizador->idorganizador ?>"><?= $organizador->organizacion ?></option>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            </select>
+        </div><br>
+
+
 
           <div class="text-center">
             <button class="col-sm-2 btn btn-dark btn-lg" type="submit">Registrar</button>
@@ -54,4 +71,3 @@
 </div>
 
 <br>
-<script src="/assets/js/main.js"></script>

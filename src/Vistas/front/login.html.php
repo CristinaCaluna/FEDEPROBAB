@@ -5,7 +5,7 @@
     </p>
   </div>
 <?php endif; ?>
-<br>
+<br><br><br>
 <main>
   <div class="container">
     <div class="row justify-content-center">
@@ -34,4 +34,4 @@
       </div>
     </div>
   </div>
-</main>
+</main><br>

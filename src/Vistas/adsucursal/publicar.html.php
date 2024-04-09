@@ -20,6 +20,13 @@
         <div class="mx-auto">
             <form class="needs-validation" action="" method="post" enctype="multipart/form-data">
                 <div class="g-3">
+                <div class="col-sm-8 mx-auto">
+                        <label for="fecha_publ" class="form-label">Fecha</label>
+                        <input type="date" name="fecha" class="form-control border border-dark" id="fecha_publi" placeholder="" value="<?= date_create('now', new DateTimeZone('America/Guayaquil'))->format('Y-m-d'); ?>" required="" style="width: 70%;">
+                        <div class="invalid-feedback">
+                            Se requiere ingresar una fecha.
+                        </div>
+                    </div><br>
                   <div class="col-8 mx-auto">
                         <label for="anuncio" class="form-label">Título de la Noticia</label>
                         <input type="text" name="titulo" class="form-control border border-dark" id="anuncio" placeholder="" value="" required="" style="width: 80%;">
@@ -33,13 +40,7 @@
                         <textarea class="form-control border border-dark" name="publicacion" aria-label="With textarea" style="width: 80%;"></textarea>
                     </div><br>
 
-                    <div class="col-sm-5 mx-auto">
-                        <label for="fecha_publ" class="form-label">Fecha</label>
-                        <input type="date" name="fecha" class="form-control border border-dark" id="fecha_publi" placeholder="" value="<?= date_create('now', new DateTimeZone('America/Guayaquil'))->format('Y-m-d'); ?>" required="" style="width: 70%;">
-                        <div class="invalid-feedback">
-                            Se requiere ingresar una fecha.
-                        </div>
-                    </div>
+
                     <br>
                     <div class="col-sm-8 mx-auto">  
                         <label for="archivo_publ" class="form-label">Archivo (Imagen/Video)</label>
