@@ -203,6 +203,12 @@ class RutasAplicacion{
                         "accion"=>'filial9'
                     ],
                 ],
+                'legislacion'=>[
+                    "GET"=>[
+                        "controlador"=> $inicio,
+                        "accion"=>'legislacion'
+                    ],
+                ],
             
 
 //admin

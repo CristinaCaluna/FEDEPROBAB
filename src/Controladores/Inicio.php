@@ -276,8 +276,20 @@ class Inicio  {
 
     } 
 
-    
+    //legislacion 
 
+    
+    public function legislacion(){
+      
+        
+        return[
+
+            'template'=>'front/legislacion.html.php',
+            'titulo'=>'Legislacion'
+        ];
+
+
+    } 
 
 
 
