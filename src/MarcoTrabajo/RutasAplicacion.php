@@ -11,6 +11,7 @@ use App\Controladores\Web\Login;
 use App\Modelos\Organizadores;
 use App\Modelos\Usuarios;
 use App\Modelos\Publicaciones;
+use App\Controladores\Admin\ReTransparencia;
 
 use App\Controladores\Admin\RegistrarEvento;
 use App\Controladores\AdSucursales\RegistrarEventoad;
@@ -24,6 +25,7 @@ class RutasAplicacion{
     private $publicaciones;
     private $organizadores;
     private $eventosdeportivos;
+    private $lotaip_pri;
  
 
     public function __construct()
@@ -48,6 +50,7 @@ class RutasAplicacion{
         $nuevaClave = new Clave($this ->usuarios, $this->autenttificacion);
         $registrarEvento = new RegistrarEvento($this ->usuarios,$this ->eventosdeportivos);
         $registrarEventoad = new RegistrarEventoad($this ->usuarios, $this ->eventosdeportivos);
+        $retransparencia = new ReTransparencia($this ->usuarios, $this->lotaip_pri);
         
         
 
@@ -209,6 +212,12 @@ class RutasAplicacion{
                         "accion"=>'legislacion'
                     ],
                 ],
+                'transparencia'=>[
+                    "GET"=>[
+                        "controlador"=>$retransparencia,
+                        "accion"=>'transparencias'
+                    ],
+                ],
             
 
 //admin
@@ -311,6 +320,21 @@ class RutasAplicacion{
                         'rol' => Usuarios::ADMIN //rol
                 
                 ],
+                'admin/transparencia' =>[
+                  
+                    "GET"=>[
+                        "controlador"=>$retransparencia,
+                        "accion"=>'transparencia'
+                    ],
+                    "POST"=>[
+                        "controlador"=> $retransparencia,
+                        "accion"=>'agregar'
+                    ],
+                    
+                    'login' => true, // loguedo
+                    'rol' => Usuarios::ADMIN //rol
+            
+            ],
              
 
  //AdSucursal

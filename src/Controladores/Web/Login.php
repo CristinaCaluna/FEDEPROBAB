@@ -55,8 +55,7 @@ class Login {
         return [
             'titulo' => 'Iniciar Sesión',
             'template' => 'front/login.html.php',
-            'variables' => [
-                'error' => 'Usuario o contraseña incorrectos'
+            'variables' => ['error' => 'Usuario o contraseña incorrectos'
             ]
         ];
         

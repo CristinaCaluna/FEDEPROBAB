@@ -41,7 +41,7 @@ class EntryPoint{
        if(isset($rutas[$this->ruta]['rol']) && !$this->rutasAplicaciones->tieneRol($rutas[$this->ruta]['rol'])){
             header('location: /error');
        }
-
+ 
        $result=$controlador->$accion();
        $template=$result['template'];
        $titulo=$result['titulo'];

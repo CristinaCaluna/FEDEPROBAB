@@ -19,7 +19,7 @@ class ModificarAdSucursal{
     public function index(){
 
         return[
-            'titulo' => 'Modificar lista de sucursales',
+            'titulo' => 'Modificar lista de Sucursales',
             'template'=> 'admin/modificar_sucursal.html.php'
         ];
 
@@ -29,7 +29,7 @@ class ModificarAdSucursal{
     public function removeSucursal(){
         $sucursales =  $this->sucursales->selectFromColumn('rol',Usuarios::SUCURSAL);
         return [
-            'titulo' => 'Habilitar - Deshabilitar Presidentes',
+            'titulo' => 'Habilitar - Deshabilitar Sucursales',
             'template' => 'admin/modificar_sucursal.html.php',
             'variables' => [
                 'sucursales' => $sucursales

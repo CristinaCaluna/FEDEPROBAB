@@ -154,3 +154,8 @@
         document.getElementById('longitud').value = e.latlng.lng;
     });
 </script>
+
+
+
+
+

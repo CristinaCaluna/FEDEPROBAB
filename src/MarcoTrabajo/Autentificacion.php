@@ -28,24 +28,30 @@ class Autentificacion {
     }
 
     public function verificacion($usuario, $password) {
-        $usuarioV = $this->modelo[0]->selectFromColumn($this->column[0],$usuario);
-
-        $usuarioV = count($usuarioV) > 0 ? $usuarioV : $this->modelo[1]->selectFromColumn($this->column[1],$usuario);
-        
-        // select where cedula = '025018665'
-        if($usuarioV && password_verify($password, $usuarioV[0]->{$this->password})&& $usuarioV[0]->estado !== 'inactivo'){
+        // Verifica si el modelo en el índice 0 no es nulo y tiene el método selectFromColumn
+        if (!is_null($this->modelo[0]) && method_exists($this->modelo[0], 'selectFromColumn')) {
+            $usuarioV = $this->modelo[0]->selectFromColumn($this->column[0], $usuario);
+        } elseif (!is_null($this->modelo[1]) && method_exists($this->modelo[1], 'selectFromColumn')) {
+            // Si el modelo en el índice 0 es nulo o no tiene el método, intenta con el modelo en el índice 1
+            $usuarioV = $this->modelo[1]->selectFromColumn($this->column[1], $usuario);
+        } else {
+            // Si ninguno de los modelos tiene el método selectFromColumn, retorna falso
+            return false;
+        }
+    
+        // Verifica si se encontró un usuario y si la contraseña coincide y el estado no es 'inactivo'
+        if ($usuarioV && isset($usuarioV[0]->{$this->password}) && password_verify($password, $usuarioV[0]->{$this->password}) && $usuarioV[0]->estado !== 'inactivo') {
             session_regenerate_id();
             $_SESSION['usuario'] = $usuario;
             $_SESSION['password'] = $usuarioV[0]->{$this->password};
             $_SESSION['rol'] = $usuarioV[0]->rol;
             return true;
-            
         }
         
+    
         return false;
-
-
     }
+    
 
     public function estaLoguedo(){
         if(!isset($_SESSION['usuario'])){

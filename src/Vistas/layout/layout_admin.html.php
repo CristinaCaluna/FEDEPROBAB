@@ -107,6 +107,14 @@
                     </strong>
                 </li>
 
+                <li ><strong>
+                    <h5>
+                        <a class="nav-link px-8" style="color: aliceblue;" href="/admin/transparencia" > Transparencia </a>
+
+                    </h5>
+                    </strong>
+                </li>
+
                 <li>
                     <strong>
                         <h5><a href="/admin/cambio/clave" class="nav-link px-8" style="color: aliceblue;"> Cambiar Contraseña</a></h5>

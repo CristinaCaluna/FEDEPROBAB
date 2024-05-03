@@ -6,6 +6,7 @@ namespace App\Controladores;
 use App\Modelos\Usuarios;
 use App\Modelos\Publicaciones;
 use App\Modelos\EventosDeportivos;
+use App\Modelos\Lotaip_pri;
 
 
 class Inicio  {
@@ -13,6 +14,7 @@ class Inicio  {
 
     private Publicaciones $publicaciones;
     private Usuarios $usuarios;
+    private Lotaip_pri $lotaip_pr;
 
 
     public function __construct()
@@ -116,7 +118,7 @@ class Inicio  {
         return[
 
             'template'=>'front/organizacion/directorio.html.php',
-            'titulo'=>'Autoridades'
+            'titulo'=>'Directorio'
         ];
 
 
@@ -133,7 +135,7 @@ class Inicio  {
         return[
 
             'template'=>'front/filiales/filial.html.php',
-            'titulo'=>'Autoridades',
+            'titulo'=>'Filial',
             'variables' => ['eventosdeportivos' => $consulta]
         ];
 
@@ -148,7 +150,7 @@ class Inicio  {
         return[
 
             'template'=>'front/filiales/filial1.html.php',
-            'titulo'=>'Autoridades',
+            'titulo'=>'Filial',
             'variables' => ['eventosdeportivos' => $consulta]
         ];
 
@@ -163,7 +165,7 @@ class Inicio  {
         return[
 
             'template'=>'front/filiales/filial2.html.php',
-            'titulo'=>'Autoridades',
+            'titulo'=>'Filial',
             'variables' => ['eventosdeportivos' => $consulta]
         ];
 
@@ -179,7 +181,7 @@ class Inicio  {
         return[
 
             'template'=>'front/filiales/filial3.html.php',
-            'titulo'=>'Autoridades',
+            'titulo'=>'Filial',
             'variables' => ['eventosdeportivos' => $consulta]
         ];
 
@@ -194,7 +196,7 @@ class Inicio  {
         return[
 
             'template'=>'front/filiales/filial4.html.php',
-            'titulo'=>'Autoridades',
+            'titulo'=>'Filial',
             'variables' => ['eventosdeportivos' => $consulta]
         ];
 
@@ -209,7 +211,7 @@ class Inicio  {
         return[
 
             'template'=>'front/filiales/filial5.html.php',
-            'titulo'=>'Autoridades',
+            'titulo'=>'Filial',
             'variables' => ['eventosdeportivos' => $consulta]
         ];
 
@@ -224,7 +226,7 @@ class Inicio  {
         return[
 
             'template'=>'front/filiales/filial6.html.php',
-            'titulo'=>'Autoridades',
+            'titulo'=>'Filial',
             'variables' => ['eventosdeportivos' => $consulta]
         ];
 
@@ -239,7 +241,7 @@ class Inicio  {
         return[
 
             'template'=>'front/filiales/filial7.html.php',
-            'titulo'=>'Autoridades',
+            'titulo'=>'Filial',
             'variables' => ['eventosdeportivos' => $consulta]
         ];
 
@@ -254,7 +256,7 @@ class Inicio  {
         return[
 
             'template'=>'front/filiales/filial8.html.php',
-            'titulo'=>'Autoridades',
+            'titulo'=>'Filial',
             'variables' => ['eventosdeportivos' => $consulta]
         ];
 
@@ -269,7 +271,7 @@ class Inicio  {
         return[
 
             'template'=>'front/filiales/filial9.html.php',
-            'titulo'=>'Autoridades',
+            'titulo'=>'Filial',
             'variables' => ['eventosdeportivos' => $consulta]
         ];
 
@@ -292,8 +294,7 @@ class Inicio  {
     } 
 
 
-
-    
+ 
 
 
 }

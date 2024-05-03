@@ -104,7 +104,7 @@ class RegistrarEvento
     public function listarf()
     {
         // Recuperar eventos deportivos de fútbol con latitud y longitud
-        $consulta = EventosDeportivos::where('idevento_eventos', 1)->distinct()->get();
+        $consulta = EventosDeportivos::where('idevento_eventos', 1)->where('idorganizador_organizador', 1)->distinct()->get();
         //var_dump($consulta);
         return [
             'template' => 'front/eventos/futbol.html.php',
@@ -115,12 +115,12 @@ class RegistrarEvento
     
     public function listarb()
     { 
-        $consulta = EventosDeportivos::where('idevento_eventos', 2)->distinct()->get();
+        $consulta = EventosDeportivos::where('idevento_eventos', 2)->where('idorganizador_organizador', 1)->distinct()->get();
         
       
         return [
             'template' => 'front/eventos/bascket.html.php',
-            'titulo' => 'Eventos',
+            'titulo' => 'Eventos de Bascketbol',
             'variables' => ['eventosdeportivos' => $consulta]
         ];
     }
@@ -128,33 +128,33 @@ class RegistrarEvento
     public function listarv()
     {
        
-        $consulta = EventosDeportivos::where('idevento_eventos', 3)->distinct()->get();
+        $consulta = EventosDeportivos::where('idevento_eventos', 3)->where('idorganizador_organizador', 1)->distinct()->get();
 
         return [
             'template' => 'front/eventos/voly.html.php',
-            'titulo' => 'Eventos',
+            'titulo' => 'Eventos de Voly',
             'variables' => ['eventosdeportivos' => $consulta]
         ];
     }
     public function listari()
     {
         
-        $consulta = EventosDeportivos::where('idevento_eventos', 4)->distinct()->get();
+        $consulta = EventosDeportivos::where('idevento_eventos', 4)->where('idorganizador_organizador', 1)->distinct()->get();
        
         return [
             'template' => 'front/eventos/indor.html.php',
-            'titulo' => 'Eventos',
+            'titulo' => 'Eventos de Indor',
             'variables' => ['eventosdeportivos' => $consulta]
         ];
     }
     public function listarfs()
     {
       
-        $consulta = EventosDeportivos::where('idevento_eventos', 5)->distinct()->get();
+        $consulta = EventosDeportivos::where('idevento_eventos', 5)->where('idorganizador_organizador', 1)->distinct()->get();
       
         return [
             'template' => 'front/eventos/futsa.html.php',
-            'titulo' => 'Eventos',
+            'titulo' => 'Eventos Fultbol Sala',
             'variables' => ['eventosdeportivos' => $consulta]
         ];
     }
@@ -163,7 +163,8 @@ class RegistrarEvento
     
 
 
-
+   
+  
 
 
 
